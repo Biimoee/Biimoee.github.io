@@ -1,0 +1,209 @@
+/*Menu header*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto+Mono:wght@300&display=swap');
+body {
+    margin: 0;
+}
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+.lien-menu {
+    color: rgb(39, 39, 39);
+    transition-property: background-color;
+    transition-duration: 0.6s;
+}
+.lien-menu:hover {
+    color: rgb(0, 0, 0);
+    transition-property: color;
+    transition-duration: 0.6s;
+}
+
+/* header */
+.header {
+    font-weight: bolder;
+    background-color: rgb(236, 236, 236);
+    box-shadow: 0.5px 0.5px 10px rgb(90, 90, 90);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: rgb(236, 236, 236);
+}
+
+.header li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.header .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+/* menu */
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+/* menu icon */
+.header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+.header .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 1070px) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .header .menu-icon {
+        display: none;
+    }
+}
+    #theme {
+        background-color:rgb(236, 236, 236);
+        border: none;
+        color: white;
+        outline-style:none;
+        margin: 0;
+        padding: 20px 20px;
+    }
+/*Texte paragraphe*/
+p {    text-align:justify;
+    color: rgb(20, 20, 20);
+    margin-left: 150px;
+    margin-right: 150px;
+}
+/*Code écrit*/
+code {
+    font-size: 120%;
+    margin-left: 150px;
+    margin-right: 40%;
+}
+pre code {
+    font-family: 'Roboto Mono';
+    font-size: 90%;
+    background-color: rgb(48, 48, 48);
+    color: whitesmoke;
+    border: 1px solid #999;
+    border-radius: 3px;
+    display: block;
+    padding: 20px;
+}
+@media screen and (max-width: 980px){
+    code {
+        margin-right: 5%;
+    }
+}
+p span {
+    background-color: #eee;
+    display: inline-block;
+    border-radius: 3px;
+}
+.list-p {
+    margin-left: 150px;
+    margin-right: 150px;
+    list-style-type: circle;
+}
+/*Titre*/
+h1 {
+    font-size: 200%;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+h2 {
+    font-size: 150%;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+h3 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-left: 150px;
+    margin-right: 150px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Matière de l'examen</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="icone.ico">
+</head>
+<body>
+    <!--Menu header-->
+<header class="header">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+      <li><a class="lien-menu" href="#basescss">Les bases du CSS</a></li>
+      <li><a class="lien-menu" href="#tableaux">Les tableaux</a></li>
+      <li><a class="lien-menu" href="design.css">Code source CSS</a></li>
+    </ul>
+  </header>
+  <br><br><br><br>
+<!--Les bases du CSS-->
+  <h1 id="basescss">Les bases du CSS</h1>
+  <p>Voici quelques notions de base du CSS</p>
+  <h2>Le fond</h2>
+  <h3>Appliquer une couleur de fond</h3>
+  <p><pre><code>body { background-color: red; }</code></pre></p>
+  <h3>Appliquer une image de fond</h3>
+  <p><pre><code>body { background-image: url(nom_de_l_image.png) }</code></pre></p>
+  <br>
+  <h2>Le texte</h2>
+  <h3>Changer la couleur du texte</h3>
+  <p><pre><code>* { color: blue; }</code></pre></p>
+  <h3>Changer la police du texte</h3>
+  <p><pre><code>* { font-family: Verdana, Geneva, Tahoma, sans-serif; }</code></pre></p>
+  <h3>Modifier la taille du texte</h3>
+  <p><pre><code>* {font-size: 150%; }</code></pre></p>
+  <h2>Divers</h2>
+  <h3>Appliquer une marge</h3>
+  <p><pre><code>/*Partout*/
+    body { margin: 50px; }
+/*A gauche*/
+    body { margin-left: 50px; }
+  </code></pre></p><br><br><br>
+<!--Les principales balises HTML-->
+<h1>Les principales balises HTML</h1>
+  <h2>Insérer une image</h2>
+  <p>On utilise la balise <span>&lt;img&gt;</span> pour insérer une image dans une page HTML. C'est une balise auto fermante, c'est-à-dire qu'il n'y a pas besoin de la refermer.<br><br> Il existe de nombreux attributs qui peuvent se mettre dans cette balise. Certains sont obligatoires, d'autres non.<br>L'attribut <span>&lt;src&gt;</span> dit à la page web à afficher.<br>L'attribut <span>&lt;alt&gt;</span> associe un texte à cette image. Une voix peut par exemple lire ce texte pour les personnes malvoyantes. Ce texte s'affiche ausssi quand l'image ne peut pas s'afficher (quand le fichier est corrompu par exemple).<br>Je n'ai cité que les deux attributs obligatoires, il en existe beaucoup d'autres.</p>
+  <p><pre><code>&lt;img src="images/mon_image.jpg" alt="Une image"&gt;</code></pre></p>
+  <h2>Le retour à la ligne</h2>
+  <p><pre><code>&lt;br&gt;</code></pre></p>
+  <h2>Les titres</h2>
+  <p><pre><code>&lt;h1&gt;Titre 1&lt;/h1&gt;
+&lt;h2&gt;Titre 2&lt;/h2&gt;
+  </code></pre></p>
+<!--Les tableaux-->
+<br><br><br><h1 id=tableaux>Les tableaux</h1>
+  <p>La balise <span>&lt;table&gt; &lt;/table&gt;</span> permet d'indiquer le début et la fin d'un tableau.
+    <pre><code>&lt;table&gt; &lt;/table&gt;</code></pre></p>
+    <p>Voici deux nouvelles balises :
+    <ul class="list-p">
+        <li>La balise <span>&lt;tr&gt; &lt;/tr&gt;</span> indique le début et la fin d'une ligne du tableau</li>
+        <li>La balise <span>&lt;td&gt; &lt;/td&gt;</span> indique le début et la fin du contenu d'une cellule</li>
+    </ul></p>
+    <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne (<span>&lt;tr&gt;</span>), on indique le contenu des différentes cellules (<span>&lt;td&gt;).</span></p>
+    <h2>Exemple</h2>
+    <p><pre><code>&lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;A&lt;/td&gt;
+            &lt;td&gt;B&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+        &lt;/tr&gt;
+     &lt;/table&gt;
+     &lt;style&gt;td{border: 1px solid black;}&lt;/style&gt;
+    </code></pre></p>
+    <h2>Résulat</h2>
+    <table style="margin-left:150px;">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table><style>td{border: 1px solid black;}</style>
+</body>
+</html>
