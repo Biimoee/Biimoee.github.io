@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML - Matière de l'examen</title>
     <link rel="stylesheet" href="design.css">
-    <link rel="icon" href="1623956322014.ico">
+    <link rel="icon" href="icone.ico">
 </head>
 <body>
     <!--Menu header-->
@@ -15,8 +15,9 @@
     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
     <ul class="menu">
       <li><a class="lien-menu" href="#basescss">Les bases du CSS</a></li>
+      <li><a class="lien-menu" href="#baseshtml">Les principales balises HTML</a></li>
       <li><a class="lien-menu" href="#tableaux">Les tableaux</a></li>
-      <li><a class="lien-menu" href="design.css">Code source CSS</a></li>
+      <li><a class="lien-menu" target="_blank" href="design.css">Code source CSS</a></li>
     </ul>
   </header>
   <br><br><br><br>
@@ -44,7 +45,7 @@
     body { margin-left: 50px; }
   </code></pre></p><br><br><br>
 <!--Les principales balises HTML-->
-<h1>Les principales balises HTML</h1>
+<h1 id="baseshtml">Les principales balises HTML</h1>
   <h2>Insérer une image</h2>
   <p>On utilise la balise <span>&lt;img&gt;</span> pour insérer une image dans une page HTML. C'est une balise auto fermante, c'est-à-dire qu'il n'y a pas besoin de la refermer.<br><br> Il existe de nombreux attributs qui peuvent se mettre dans cette balise. Certains sont obligatoires, d'autres non.<br>L'attribut <span>&lt;src&gt;</span> dit à la page web à afficher.<br>L'attribut <span>&lt;alt&gt;</span> associe un texte à cette image. Une voix peut par exemple lire ce texte pour les personnes malvoyantes. Ce texte s'affiche ausssi quand l'image ne peut pas s'afficher (quand le fichier est corrompu par exemple).<br>Je n'ai cité que les deux attributs obligatoires, il en existe beaucoup d'autres.</p>
   <p><pre><code>&lt;img src="images/mon_image.jpg" alt="Une image"&gt;</code></pre></p>
