@@ -186,6 +186,11 @@ p span {
     display: inline-block;
     border-radius: 3px;
 }
+li span {
+    background-color: #eee;
+    display: inline-block;
+    border-radius: 3px;
+}
 .list-p {
     margin-left: 150px;
     margin-right: 150px;
