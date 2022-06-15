@@ -18,6 +18,7 @@
       <li><a class="lien-menu" href="#baseshtml">Les principales balises HTML</a></li>
       <li><a class="lien-menu" href="#tableaux">Les tableaux</a></li>
       <li><a class="lien-menu" href="#listes">Les listes</a></li>
+      <li><a class="lien-menu" href="#autres">Autres</a></li>
       <li><a class="lien-menu" target="_blank" href="design.css">Code source CSS</a></li>
     </ul>
   </header>
@@ -49,37 +50,35 @@
 <!--Les principales balises HTML-->
 <h1 id="baseshtml">Les principales balises HTML</h1>
   <h2>Insérer une image</h2>
-  <p>On utilise la balise <span><img></span> pour insérer une image dans une page HTML. C'est une balise auto fermante, c'est-à-dire qu'il n'y a pas besoin de la refermer.<br><br> Il existe de nombreux attributs qui peuvent se mettre dans cette balise. Certains sont obligatoires, d'autres non.<br>L'attribut <span><src></span> dit à la page web à afficher.<br>L'attribut <span><alt></span> associe un texte à cette image. Une voix peut par exemple lire ce texte pour les personnes malvoyantes. Ce texte s'affiche ausssi quand l'image ne peut pas s'afficher (quand le fichier est corrompu par exemple).<br>Je n'ai cité que les deux attributs obligatoires, il en existe beaucoup d'autres.</p>
-  <p><pre><code><img src="images/mon_image.jpg" alt="Une image"></code></pre></p>
+  <p>On utilise la balise <span>&lt;img&gt;</span> pour insérer une image dans une page HTML. C'est une balise auto fermante, c'est-à-dire qu'il n'y a pas besoin de la refermer.<br><br> Il existe de nombreux attributs qui peuvent se mettre dans cette balise. Certains sont obligatoires, d'autres non.<br>L'attribut <span>&lt;src&gt;</span> dit à la page web à afficher.<br>L'attribut <span>&lt;alt&gt;</span> associe un texte à cette image. Une voix peut par exemple lire ce texte pour les personnes malvoyantes. Ce texte s'affiche ausssi quand l'image ne peut pas s'afficher (quand le fichier est corrompu par exemple).<br>Je n'ai cité que les deux attributs obligatoires, il en existe beaucoup d'autres.</p>
+  <p><pre><code>&lt;img src="images/mon_image.jpg" alt="Une image"&gt;</code></pre></p>
   <h2>Le retour à la ligne</h2>
-  <p><pre><code><br></code></pre></p>
+  <p><pre><code>&lt;br&gt;</code></pre></p>
   <h2>Les titres</h2>
-  <p><pre><code><h1>Titre 1</h1>
-<h2>Titre 2</h2>
-  </code></pre></p>
+  <p><pre><code>&lt;h1&gt;Titre 1&lt;/h1&gt;<br>&lt;h2&gt;Titre 2&lt;/h2&gt;</code></pre></p>
 <!--Les tableaux-->
 <br><br><br><h1 id=tableaux>Les tableaux</h1>
-  <p>La balise <span><table> </table></span> permet d'indiquer le début et la fin d'un tableau.
-    <pre><code><table> </table></code></pre></p>
+  <p>La balise <span>&lt;table&gt;&lt;/table&gt;</span> permet d'indiquer le début et la fin d'un tableau.
+    <pre><code>&lt;table&gt;&lt;/table&gt;</code></pre></p>
     <p>Voici deux nouvelles balises :
     <ul class="list-p">
-        <li>La balise <span><tr> </tr></span> indique le début et la fin d'une ligne du tableau</li>
-        <li>La balise <span><td> </td></span> indique le début et la fin du contenu d'une cellule</li>
+        <li>La balise <span>&lt;tr&gt; &lt;/tr&gt;</span> indique le début et la fin d'une ligne du tableau</li>
+        <li>La balise <span>&lt;td&gt; &lt;/td&gt;</span> indique le début et la fin du contenu d'une cellule</li>
     </ul></p>
-    <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne (<span><tr></span>), on indique le contenu des différentes cellules (<span><td>).</span></p>
+    <p>En HTML, un tableau se construit ligne par ligne. Dans chaque ligne (<span>&lt;tr&gt;</span>), on indique le contenu des différentes cellules (<span>&lt;td&gt;</span>).</p>
     <h2>Exemple</h2>
-    <p><pre><code><table>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-        </tr>
-     </table>
+    <p><pre><code>&lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;A&lt;/td&gt;
+            &lt;td&gt;B&lt;/td&gt;
+            &lt;td&gt;C&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td>1&lt;/td&gt;
+            &lt;td>2&lt;/td&gt;
+            &lt;td>3&lt;/td&gt;
+        &lt;/tr&gt;
+  &lt;/table&gt;
      <style>td{border: 1px solid black;}</style>
     </code></pre></p>
     <h2>Résulat</h2>
@@ -98,7 +97,46 @@
 
 <!--Les listes-->
 <br><br><br><h1 id=listes>Les listes</h1>
-<p>Il existe deux types de listes: les listes ordonnées et les listes désordonnées.<br>Pour créer une liste désordonnée, on utilise la balise <span><ul></span> et, à l'intérieur de celle-ci, on utilise la balise <span><li></span> pour ajouter un élément à notre liste. On peut remettre un autre <span><ul></span> à l'intérieur du premier pour "ordonner" la liste.<br></p>
-<p>Ensuite, pour créer une liste ordonnée, on fait la même chose, sauf qu'au lieu de mettre une balise <span><ul></span>, on met une balise <span><ol></span>.</p>
+<p>Il existe deux types de listes: les listes ordonnées et les listes désordonnées.<br>Pour créer une liste désordonnée, on utilise la balise <span>&lt;ul&gt;</span> et, à l'intérieur de celle-ci, on utilise la balise <span>&lt;li&gt;</span> pour ajouter un élément à notre liste. On peut remettre un autre <span>&lt;ul&gt;</span> à l'intérieur du premier pour "ordonner" la liste.<br></p>
+<p><pre><code>&lt;ul&gt;
+  &lt;li&gt;Lait&lt;/li&gt;
+  &lt;li&gt;Fromage
+      &lt;ul&gt;
+          &lt;li&gt;Camembert&lt;/li&gt;
+          &lt;li&gt;Emmental&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre></p>
+<p><ul style="margin-left:150px;">
+  <li>Lait</li>
+  <li>Fromage
+      <ul>
+          <li>Camembert</li>
+          <li>Emmental</li>
+      </ul>
+  </li>
+</ul></p>
+<p>Ensuite, pour créer une liste ordonnée, on fait la même chose, sauf qu'au lieu de mettre une balise <span>&lt;ul&gt;</span>, on met une balise <span>&lt;ol&gt;</span>.</p>
+<p><pre><code>&lt;ol&gt;
+  &lt;li&gt;Mix flour, baking powder, sugar, and salt.&lt;/li&gt;
+  &lt;li&gt;In another bowl, mix eggs, milk, and oil.&lt;/li&gt;
+  &lt;li&gt;Stir both mixtures together.&lt;/li&gt;
+  &lt;li&gt;Fill muffin tray 3/4 full.&lt;/li&gt;
+  &lt;li&gt;Bake for 20 minutes.&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre></p>
+<p><ol style="margin-left:150px;">
+  <li>Mix flour, baking powder, sugar, and salt.</li>
+  <li>In another bowl, mix eggs, milk, and oil.</li>
+  <li>Stir both mixtures together.</li>
+  <li>Fill muffin tray 3/4 full.</li>
+  <li>Bake for 20 minutes.</li>
+  </ol>
+  </p>
+<!--Autres-->
+<br><br><br><h1 id=autres>Autres</h1>
+<h2>Vérification W3C</h2>
+<p><a href="https://validator.w3.org/">Le site W3C</a></p>
 </body>
 </html>
